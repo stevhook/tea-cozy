@@ -1,3 +1,4 @@
+/* General */
 * {
     font-family: Helvetica;
     font-size: 22px;
@@ -6,29 +7,63 @@
     opacity: 0.9;
     text-align: center;
 }
-
-nav {
+body {
+    padding-top: 69px;
+}
+h2 {
+    font-size: 1.5rem;
+}
+/* Nav bar */
+header {
+    position: fixed;
     width: 100%;
-    text-decoration: underline;
+    top: 0;
     height: 69px;
     border-bottom: 1px solid seashell;
+    opacity: 1;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.logo {
+nav{
+    width:auto;
+    right: 10px;
+}
+header img {
     height: 50px;
     margin-left: 10px;
+    float: left;
 }
-
-.mission {
+nav li {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 0 20px 0 0;
+}
+/* Mission statement */
+#mission {
     height:700px;
-    width: 1200px;
-    background-image: url(./images/img-mission-background.jpg);
+    width: auto;
+    background-image: url("./images/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#mission h2,
+#mission h4 {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
 }
 
-.TOTM {
+#featured {
     width: 1000px;
 }
-
 figure img{
     height: 200px;
     width: 300px;
